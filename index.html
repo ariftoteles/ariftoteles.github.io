@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mon Simon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <audio autoplay="" controls="">
+        <source src="audio\welcome.mp3" type="audio/mpeg"> </source>
+    </audio>  -->
+    <section class="container">
+        <div class="row1">
+            <div type="button" id="red" class="simon red"></div>
+            <div type="button" id="yellow" class="simon yellow"></div>
+        </div>
+        <div class="middle">Press start!!</div>
+        <div class="row2">
+            <div type="button" id="green" class="simon green"></div>
+            <div type="button" id="blue" class="simon blue"></div>
+        </div>
+        <div class="row3">
+            <button id="start">Start</button>
+            <button id="rules">Rules</button>
+        </div>
+    </section>
+
+
+    <section id="modal1" class="popup">
+        <div class="modal1">
+            <h1>Uppss...</h1>
+            <h2>Your memory level is : <span id="level"></span></h2>
+            <p>Keep practicing to improve your level</p>
+            <button id="play-again">
+                Play again
+            </button>
+        </div>
+    </section>
+
+    <section id="modal2" class="popup">
+        <div class="modal2">
+            <h1>Simon's Rules</h1>
+            <ol>
+                <li>Press <strong>Start</strong> to start the game</li>
+                <li>You are at Level 1, Simon will give you a clue color to choose, for example: <strong
+                        class="red-text">Red</strong></li>
+                <li>Choose the color Simon has given, choose <strong class="red-text">Red</strong></li>
+                <li>You are at Level 2, Simon will give you a clue again, for example: <strong
+                        class="yellow-text">Yellow</strong> </li>
+                <li>You have to remember color at level 1, so you have to choose <strong class="red-text">Red</strong>
+                    followed by
+                    <strong class="yellow-text">Yellow</strong></li>
+                <li>You are at level 3, Simon will give you a clue again, for example: <strong
+                        class="green-text">Green</strong></li>
+                <li>You have to remember color at level 1 and level 2, so you have to choose <strong
+                        class="red-text">Red</strong>
+                    then <strong class="yellow-text">Yellow</strong> and then <strong class="green-text">Green</strong>
+                </li>
+                <li>And so on...</li>
+            </ol>
+            <button id="close-rules">Lets Play</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

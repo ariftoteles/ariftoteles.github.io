@@ -1,0 +1,161 @@
+body {
+  text-align: center;
+  background-color: #bce6eb;
+  background-image: url(images/bg3.jpg);
+}
+
+/* Simon Section */
+
+.container {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 50px;
+  border-radius: 10px;
+}
+.simon {
+  margin: -10px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  box-sizing: border-box;
+  opacity: 90%;
+}
+.simon:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px white;
+}
+.red {
+  background-color: red;
+  border-top-left-radius: 95%;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  margin-right: 5px;
+}
+.yellow {
+  background-color: yellow;
+  border-top-right-radius: 95%;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+.green {
+  background-color: green;
+  border-bottom-left-radius: 95%;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  margin-right: 5px;
+}
+.blue {
+  background-color: blue;
+  border-bottom-right-radius: 95%;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
+.row2{
+  position: relative;
+  top: -184px;
+  margin-bottom: -100px;
+}
+.middle {
+  z-index: 1;
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+  background-color: black;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 50%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  padding: 5px;
+  padding-top: 80px;
+  box-sizing: border-box;
+  color: #FEF2BF;
+}
+.click {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.row3 {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  background-color: rgb(27, 84, 141);
+  border: rgb(27, 84, 141);
+	padding: 10px 20px;
+  font-size: 20px;
+  box-shadow: 0 0 2px white;
+	margin: 0 auto;
+	color: white;
+  border-radius: 5px;
+  font-family: 'Kirang Haerang', cursive;
+}
+button:hover {
+  background-color: lightslategrey;
+  cursor: pointer;
+}
+
+/* Modal Section*/
+
+.popup {
+	position: fixed;
+  z-index: 2;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  opacity: 0;
+	visibility: hidden;
+}
+.modal1 {
+	margin: 100px auto;
+	padding: 20px;
+  background-image: url(images/bg3.jpg);
+  color: aqua;
+  opacity: 95%;
+	border-radius: 5px;
+	width: 50%;
+	position: relative;
+	font-family: 'Press Start 2P', cursive;
+} 
+.modal2 {
+  background-image: url(images/bg3.jpg);
+  color: aqua;
+	margin: 70px auto;
+  padding: 20px;
+  opacity: 95%;
+	border-radius: 5px;
+	width: 50%;
+  position: relative;
+  text-align: left;
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 1.25rem;
+
+}
+.modal2 h1 {
+  text-align: center;
+}
+.modal2 button {
+  display: block;
+}
+.show {
+	visibility: visible ;
+	opacity: 100;
+}
+.red-text {
+  color: red;
+}
+.yellow-text {
+  color: yellow;
+}
+.green-text {
+  color: green;
+}
+#play-again {
+  margin-top: 50px
+}
+
